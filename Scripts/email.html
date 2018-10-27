@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="refresh" content="60"/>
+        <style>
+
+            /* CONFIGURAÇÕES DE NAVBAR */
+            body {margin:0;}
+
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color:#e2e2e2;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                font-size: 120%
+            }
+
+            /* DIMENSÃO */
+            li {
+                float: right;
+            }
+
+            /* CONFIGURAÇÃO DOS BOTOES */
+            li a{
+                display: block;
+                color:rgb(192, 113, 24);
+                text-align: center;
+                padding: 25px 20px;
+                text-decoration: none;
+                font-family: Bahnschrift Light
+            }
+
+            /* SE PASSAR O MOUSE POR CIMA */
+            li a:hover:not(.active){
+                background-color: snow
+            }
+
+            /* SE ESTIVER ATIVADO */
+            .active{
+                background-color:rgb(86, 156, 221);
+            }
+
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+
+            p{
+                font-family: Bahnschrift Light;
+                text-align: center;
+                letter-spacing: 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a class="active" href="email.html">EMAIL</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="home.html">HOME</a></li>
+        </ul>
+
+        <img src="../Resources/background.png" alt="Cinque Terre" width=100% height="300">
+
+        <div style="line-height: 400%">
+            <p>
+                Av. Francisco Pignatari, 650 - Vila Gustavo Correia, Carapicuíba - SP, 06310-390
+                <img src="../Resources/LogoFatec.jpg" href="http://www.fateccarapicuiba.edu.br" align="right">
+            </p>
+        </div>
+
+    </body>
+</html>
