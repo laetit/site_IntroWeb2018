@@ -2,6 +2,7 @@
     <head>
         <meta charset="utf-8"/>
         <meta http-equiv="refresh" content="60"/>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <style>
 
             /* CONFIGURAÇÕES DE NAVBAR */
@@ -71,15 +72,17 @@
             <li><a class="active" href="about.html">ABOUT</a></li>
             <li><a href="home.html">HOME</a></li>
         </ul>
-        <div style="margin-top: 73px" >
-            <img class="img about" src="../Resources/Aboutok.png">
-            <p>Site desenvolvido para a máteria de <b>Introdução a Web</b> da Turma da noite.</p>
-            <p>Smaug Desenvolvido por <b>Leticia R</b>, do quarto semestre do Curso de <b>Jogos Digitais</b>b>.</p>
-            <p>Busco apresentar de forma <b>simplificada</b> uma interface <b>infantil</b>, sendo que este é o publico alvo de nosso projeto, interface clara e amistosa</p>
-            <h1>Segundo Semestre 2018</h1>
-                <img src="../Resources/LogoFatec.jpg" href="http://www.fateccarapicuiba.edu.br" align="right">
-            </p>
+        <div id="imgVue" style="margin-top: 73px">
+            <span v-bind:title="meMouse">
+            <img class="img about" src="../Resources/Aboutok.png"></span>
         </div>
-
+        <div>
+            <p>Site desenvolvido para a máteria de <b>Introdução a Web</b> da Turma da noite.</p>
+            <p>Smaug Desenvolvido por <b>Leticia R</b>, do quarto semestre do Curso de <b>Jogos Digitais</b>.</p>
+            <p>Busco apresentar de forma <b>simplificada</b> uma interface <b>infantil</b>, sendo que este é o publico alvo de nosso projeto, interface clara e amistosa</p>
+            <img src="../Resources/LogoFatec.jpg" href="http://www.fateccarapicuiba.edu.br" align="right">
+            <h1>Segundo Semestre 2018</h1>
+        </div>
+        <script src="funcoes.js"></script>
     </body>
 </html>
