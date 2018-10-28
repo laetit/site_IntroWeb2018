@@ -41,8 +41,25 @@
 
             /* SE ESTIVER ATIVADO */
             .active{
-                background-color:rgb(86, 156, 221);
+                background-color:rgb(116, 171, 223);
             }
+
+            .button {
+                background-color: rgb(116, 171, 223);
+                color: rgb(192, 113, 24);
+                border: none;
+                padding: 20px 32px;
+                border-radius: 8px;
+                text-align: center;
+                display: inline-block;
+                font-size: 20px;
+                font-family: Bahnschrift Light;
+                -webkit-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+                cursor: pointer;
+            }
+
+            .button:hover {background-color: #e7e7e7;}
 
             div{
                 font-family: Lucida Sans;
@@ -54,40 +71,35 @@
                 font-size: 200%
             }
             p{
-                font-family: Gadugi;
-                text-align: justify;
-                letter-spacing: 10%;
+                font-family: Bahnschrift Light;
+                margin-left: 20px;
+                margin-right: 130px;
+                letter-spacing: 3px;
             }
         </style>
     </head>
     <body>
         <ul>
-            <li><a href="email.html">EMAIL</a></li>
             <li><a class="active" href="products.html">PRODUCTS</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="home.html">HOME</a></li>
         </ul>
 
-        <div style="padding: 60px; margin-top: 30px; line-height: 300%">
+        <div style="padding: 60px; margin-top: 30px; line-height: 150%">
+                <img width="200" height="400" src="../Resources/about.png" style="margin-left: 20px; float: right">
             <h1>
-                Introdução a web
+                Reality Escape Book
             </h1>
+            <p><b>Gênero</b>:  Escape Room, Point Click</p>
+            <p><b>Tema</b>: Suspense, Exploração, AR</p>
+            <p><b>Referencias</b>: Machinarium, Broken Age, Dishonored.</p>
+            <p><b>Sinopse</b>: Antes mesmo de abrir os olhos, uma dor de cabeça te invade junto com uma lembrança, você precisa ir para sua festa de formatura, mas agora sabe que existe algo mais importante. Ao abrir os olhos, se depara com o ambiente que já se encontrava com eles fechados — Está tudo completamente escuro. Você se vira e percebe uma pequena entrada de luz passando entre as frestas da cortina, não muito, mas o suficiente para entender que está na sala de aula e que já é de manhã.
+            Uma sensação de tristeza e duvida pesa em seu peito, mas sua cabeça dói o suficiente para te impedir de lembrar o motivo.
+            Você se levanta para abrir as cortinas e diz consigo mesmo:
+            “O que aconteceu ontem à noite?”.</p>
             <p>
-                Desenvolvido por Leticia Rodrigues, aluna do quarto semestre de Jogos Digitais Na Fatec de Carapicuiba.
-            </p>
-            <p>
-                Lorem ipsum nullam enim lacinia vitae commodo, inceptos vulputate orci curabitur integer vulputate, torquent 
-                imperdiet himenaeos dictumst facilisis. adipiscing ultrices sollicitudin semper ornare torquent scelerisque varius 
-                mattis cubilia hac, iaculis magna at metus pretium morbi justo aliquam. nisl vivamus tempus fusce condimentum dictum 
-                proin augue congue aliquam, eu nisi quis rhoncus vel tempus habitasse phasellus, molestie venenatis aliquet est 
-                praesent ullamcorper posuere pellentesque. phasellus ut vestibulum erat posuere sit posuere sapien venenatis, cursus 
-                mi tempor curabitur etiam conubia fermentum, aliquam ultricies facilisis torquent orci tellus etiam. taciti integer 
-                lacinia bibendum odio faucibus conubia felis arcu diam, fames tellus venenatis tellus dui integer egestas. 
-            </p>
-            <img width="200" height="400" src="../Resources/about.png" align="right">
-        </div>
-        <div>   
-            <p>
+                <button class="button">DOWNLOAD</button>
+                <button class=button>COMMENT</button>
                 <img src="../Resources/LogoFatec.jpg" align="right">
             </p>
         </div>
