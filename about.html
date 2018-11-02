@@ -45,14 +45,23 @@
                 background-color:rgb(86, 156, 221);
             }
 
-            img{
+            img.about{
                 max-width: 100%;
                 height: auto;
+                opacity: 0.5;
+            }
+
+            h1 {                
+                text-transform: uppercase;
+                color: rgb(86, 156, 221);
+                font-size: 200%;
+                margin-left: 20px;
             }
 
             p{
                 font-family: Bahnschrift Light;
-                text-align: center;
+                margin-left: 20px;
+                margin-right: 130px;
                 letter-spacing: 3px;
             }
         </style>
@@ -60,18 +69,20 @@
     <body>
         <ul>
             <li><a href="products.html">PRODUCTS</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a class="active" href="home.html">HOME</a></li>
+            <li><a class="active" href="about.html">ABOUT</a></li>
+            <li><a href="home.html">HOME</a></li>
         </ul>
-
-        <img src="../Resources/background.png" alt="Cinque Terre" width=100% height="300">
-
-        <div id="imgVue" style="line-height: 400%">
-            <p>
-                Av. Francisco Pignatari, 650 - Vila Gustavo Correia, Carapicuíba - SP, 06310-390
-            </p>
-            <img src="../Resources/LogoFatec.jpg" href="http://www.fateccarapicuiba.edu.br" align="right">
+        <div id="imgVue" style="margin-top: 73px">
+            <span v-bind:title="meMouse">
+            <img class="img about" src="Resources/Aboutok.png"></span>
         </div>
-        <script src="funcoes.js"></script>
+        <div>
+            <p>Site desenvolvido para a máteria de <b>Introdução a Web</b> da Turma da noite.</p>
+            <p>Smaug Desenvolvido por <b>Leticia R</b>, do quarto semestre do Curso de <b>Jogos Digitais</b>.</p>
+            <p>Busco apresentar de forma <b>simplificada</b> uma interface <b>infantil</b>, sendo que este é o publico alvo de nosso projeto, interface clara e amistosa</p>
+            <img src="Resources/LogoFatec.jpg" href="http://www.fateccarapicuiba.edu.br" align="right">
+            <h1>Segundo Semestre 2018</h1>
+        </div>
+        <script src="Scripts/funcoes.js"></script>
     </body>
 </html>
