@@ -1,6 +1,8 @@
 
-// function downloadOnClick(){
-//     printJS('/Resources/smaugo.pdf');
+// function downloadOnClick(endere){
+//     var objFra = document.open(endere);
+//     objFra.contentWindow.focus();
+//     objFra.contentWindow.print();
 // }
 
 function commentOnClick(){
