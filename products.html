@@ -78,6 +78,13 @@
                 margin-right: 130px;
                 letter-spacing: 3px;
             }
+
+            @media print {
+            h1 {
+                color: red;
+                font-size: 40px;
+            }
+        }
         </style>
     </head>
     <body>
@@ -88,7 +95,7 @@
         </ul>
 
         <div style="padding: 60px; margin-top: 30px; line-height: 150%">
-                <img width="200" height="400" src="Resources/about.png" style="margin-left: 20px; float: right">
+                <img width="200" height="400" src="Resources/about.png" style="float: right">
             <h1>
                 Reality Escape Book
             </h1>
@@ -98,13 +105,14 @@
             <p><b>Sinopse</b>: Antes mesmo de abrir os olhos, uma dor de cabeça te invade junto com uma lembrança, você precisa ir para sua festa de formatura, mas agora sabe que existe algo mais importante. Ao abrir os olhos, se depara com o ambiente que já se encontrava com eles fechados — Está tudo completamente escuro. Você se vira e percebe uma pequena entrada de luz passando entre as frestas da cortina, não muito, mas o suficiente para entender que está na sala de aula e que já é de manhã.
             Uma sensação de tristeza e duvida pesa em seu peito, mas sua cabeça dói o suficiente para te impedir de lembrar o motivo.
             Você se levanta para abrir as cortinas e diz consigo mesmo:
-            “O que aconteceu ontem à noite?”.</p>
+            “O que aconteceu ontem à noite?”<br/>.</p>
             <p>
-                <button class="button">DOWNLOAD</button>
-                <button class=button>COMMENT</button>
-                <img src="Resources/LogoFatec.jpg" align="right">
+                <button class="button" onclick="downloadOnClick()">DOWNLOAD</button>
+                <button onclick="commentOnClick()" class=button>COMMENT</button>
+                <img src="Resources/LogoFatec.jpg" style="float: right">
+                <p id="buttonRespon"></p>
             </p>
         </div>
-
+        <script src="Scripts/funcoes.js"></script>
     </body>
 </html>
