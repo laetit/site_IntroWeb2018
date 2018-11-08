@@ -1,7 +1,7 @@
 
-function downloadOnClick(){
-    printJS('/Resources/smaugo.pdf');
-}
+// function downloadOnClick(){
+//     printJS('/Resources/smaugo.pdf');
+// }
 
 function commentOnClick(){
     var alerta;
