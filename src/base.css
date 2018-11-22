@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans+Condensed:300|Roboto+Mono');
+
+/* CONFIGURAÇÕES DE NAVBAR */
+body {
+    margin:0;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#e2e2e2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 120%
+}
+
+/* DIMENSÃO */
+li {
+    float: right;
+}
+/* CONFIGURAÇÃO DOS BOTOES */
+li a{
+    display: block;
+    color:rgb(192, 113, 24);
+    text-align: center;
+    padding: 25px 20px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* SE PASSAR O MOUSE POR CIMA */
+li a:hover:not(.active){
+    background-color: snow
+}
+
+div.conteudo{
+    margin: 20px 20px;
+}
+
+img.about{
+    max-width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+img.home{
+    max-width: 100%;
+    height: auto;
+}
+
+.button {
+    background-color: rgb(116, 171, 223);
+    color: rgb(192, 113, 24);
+    padding: 20px 32px;
+    border-radius: 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    text-align: center;
+    color: chocolate;
+    font-size: 120%;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 130%;
+    margin-left: 20px;
+    margin-right: 130px;
+    letter-spacing: 3px;
+}
