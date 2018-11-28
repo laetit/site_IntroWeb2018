@@ -6,9 +6,11 @@
     $db = new PDO(
         'mysql:host=127.0.0.1;dbname=comment;charset=utf8', 'root', '');
 
-    $sql = "INSERT INTO comment".
-            "(nome, email, comentario)".
-            "VALUES ('$nome', '$email', '$comentario')";
-
-    $db->exec($sql);
+    $sql = "SELECT * FROM comment LIMIT 5";
+    $stmt = $db->query($sql);
+    $lista = array();
+    forEach( $stmt as $row ) {
+        array_push($lista, $row);
+    }
+    $_SESSION['LISTA'] = $lista;
 ?>

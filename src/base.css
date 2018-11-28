@@ -75,11 +75,21 @@ h1 {
 p{
     font-family: 'Montserrat', sans-serif;
     line-height: 130%;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-right: 130px;
     letter-spacing: 3px;
 }
 
 div.form-group{
     margin: 20px;
+}
+
+div.cadastro{
+    float: left;
+}
+
+textarea{
+    width: 737px;
+    height: 201px;
+    resize: none;
 }

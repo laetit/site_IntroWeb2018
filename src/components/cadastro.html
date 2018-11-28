@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="../base.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="conteudo cadastro">
+            <h1>De cadastre como nosso cliente!</h1>
+            <form action="../comment.php">
+                <label><p>Nome completo:</p></label>
+                <input type="text" name="Nome" size="100">
+                <label><p>Email:</p></label>
+                <input type="email" name="Email" size="100">
+                <label><p>Comentarios:</p></label>
+                <textarea  type="text" name="Comentario" row="3"></textarea>
+                <br>
+                <input type="submit" name="enviar" value="Envie!">
+            </form>
+        </div>
+        <div>
+            <br><h1>Ultimos comentarios enviados!</h1>
+            <br><br>
+            <p>
+            <table class="table">
+                <tr>
+                    <th>Nome:</th>
+                    <th>Comentario:</th>
+                </tr>
+                <?php
+                    foreach($lista as $comment) {
+                    ?>
+                    <tr>
+                        <td><?=$comment['nome']?></td>
+                        <td><?=$comment['comentatio']?></td>
+                    </tr>
+                <?php } ?>
+            </table>
+            </p>
+        </div>
+    </body>
+</html>
