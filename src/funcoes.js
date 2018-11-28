@@ -6,8 +6,9 @@ function commentOnClick(){
         alerta = "Comentario vazio.";
     } else {
         alerta = "Obrigada pelo comentario!";
-    }
+    }   
     document.getElementById("buttonRespon").innerHTML = alerta;
+    return com;
 }
 
 var imgVue = new Vue({

@@ -1,5 +1,6 @@
 <html>
     <head>
+        <link href="../modules/css/bootstrap.min.css" rel="stylesheet">
         <link href="../base.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     </head>
@@ -18,7 +19,13 @@
             “O que aconteceu ontem à noite?”<br/></p> 
             <div style="text-align: center">
                 <a href="../../Resources/smaugo.pdf"><button class=button>DOWNLOAD</button></a>
-                <button onclick="commentOnClick()" class=button>COMMENT</button>    
+                <form>
+                    <div class="form-group">
+                        <h1>Envie um comentario para nós</h1>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                        <button></button>>
+                    </div>
+                </form> 
                 <p id="buttonRespon"></p>
             </div>
         </div>

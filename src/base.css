@@ -79,3 +79,7 @@ p{
     margin-right: 130px;
     letter-spacing: 3px;
 }
+
+div.form-group{
+    margin: 20px;
+}
