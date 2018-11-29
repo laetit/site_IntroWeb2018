@@ -30,7 +30,7 @@
                     <th>Comentario:</th>
                 </tr>
                 <?php
-                    foreach($lista as $comment) {
+                    foreach($lista as &$comment) {
                     ?>
                     <tr>
                         <td><?=$comment['Nome']?></td>
