@@ -1,7 +1,7 @@
 <?php
-    $nome = $_POST['txtNome'];
-    $email = $_POST['txtEmail'];
-    $comment = $_POST['txtComentario'];
+    $nome = $_POST["txtNome"];
+    $email = $_POST["txtEmail"];
+    $comment = $_POST["txtComentario"];
 
     $db = new PDO(
         'mysql:host=localhost;dbname=comment;charset=utf8', 'root', '');

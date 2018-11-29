@@ -10,11 +10,11 @@
                 <div class="container">	
                     <h1>De cadastre como nosso cliente!</h1>
                     <label><p>Nome completo:</p></label>
-                    <input class="form-control" type="text" id="txtNome" size="90">
+                    <input class="form-control" type="text" id="txtNome" name="txtNome" size="90">
                     <label><p>Email:</p></label>
-                    <input class="form-control" type="email" id="txtEmail" size="90">
+                    <input class="form-control" type="email" id="txtEmail" name="txtEmail" size="90">
                     <label><p>Comentarios:</p></label>
-                    <textarea class="form-control" type="text" id="txtComentario" row="3"></textarea>
+                    <textarea class="form-control" type="text" id="txtComentario" name="txtComentario" row="3"></textarea>
                     <br>
                     <input type="submit" name="btn_enviar" value="Envie!">
                 </div>
