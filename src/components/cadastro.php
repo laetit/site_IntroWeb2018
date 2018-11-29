@@ -6,17 +6,17 @@
     </head>
     <body>
         <div class="conteudo cadastro">
-            <form action="../comment.php">
+            <form action="../comment.php" method="post">
                 <div class="container">	
                     <h1>De cadastre como nosso cliente!</h1>
                     <label><p>Nome completo:</p></label>
-                    <input class="form-control" type="text" id="Nome" size="100">
+                    <input class="form-control" type="text" id="txtNome" size="90">
                     <label><p>Email:</p></label>
-                    <input class="form-control" type="email" id="Email" size="100">
+                    <input class="form-control" type="email" id="txtEmail" size="90">
                     <label><p>Comentarios:</p></label>
-                    <textarea class="form-control" type="text" id="Comentario" row="3"></textarea>
+                    <textarea class="form-control" type="text" id="txtComentario" row="3"></textarea>
                     <br>
-                    <input type="submit" id="enviar" value="Envie!">
+                    <input type="submit" value="Envie!">
                 </div>
             </form>
         </div>
@@ -33,8 +33,8 @@
                     foreach($lista as &$comment) {
                     ?>
                     <tr>
-                        <td><?=$comment['Nome']?></td>
-                        <td><?=$comment['Comentario']?></td>
+                        <td><?=$comment['nome']?></td>
+                        <td><?=$comment['comment']?></td>
                     </tr>
                 <?php } ?>
             </table>

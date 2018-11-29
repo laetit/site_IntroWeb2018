@@ -80,6 +80,15 @@ p{
     letter-spacing: 3px;
 }
 
+p.cret{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 130%;
+    margin-left: 0px;
+    margin-right: 130px;
+    letter-spacing: 3px;
+    text-align:center;
+}
+
 div.form-group{
     margin: 20px;
 }
@@ -89,7 +98,7 @@ div.cadastro{
 }
 
 textarea{
-    width: 737px;
-    height: 201px;
+    width: 660px;
+    height: 200px;
     resize: none;
 }
