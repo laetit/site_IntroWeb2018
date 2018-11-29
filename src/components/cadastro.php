@@ -16,7 +16,7 @@
                     <label><p>Comentarios:</p></label>
                     <textarea class="form-control" type="text" id="txtComentario" row="3"></textarea>
                     <br>
-                    <input type="submit" value="Envie!">
+                    <input type="submit" name="btn_enviar" value="Envie!">
                 </div>
             </form>
         </div>
